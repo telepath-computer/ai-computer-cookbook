@@ -6,7 +6,7 @@
 
 - [Inference engines](#inference-engines)
 - [Models](#models)
-- [Agentic memory systems](#agentic-memory-systems)
+- [Memory & storage systems](#memory--storage-systems)
 - [Agent harnesses](#agent-harnesses)
 - [Interfaces](#interfaces)
 - [Builds](#builds)
@@ -30,14 +30,21 @@
 - [Inkling](https://huggingface.co/thinkingmachines/Inkling)
 - [Muse Glimmer](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Gemma 4](https://huggingface.co/google/gemma-4-31B-it)
+- [Kimi](https://huggingface.co/moonshotai)
+- [Mistral](https://huggingface.co/mistralai)
 
-## Agentic memory systems
+## Memory & storage systems
+- [Autofile](https://github.com/telepath-computer/autofile)
 - [Honcho](https://honcho.dev/)
 - [GBrain](https://gbrain.io/)
 - [mem0](https://mem0.ai/)
 - [OpenViking](https://github.com/volcengine/OpenViking)
 - [Solstone](https://solstone.app/)
 - [Hindsight](https://github.com/vectorize-io/hindsight)
+- [SQLite](https://sqlite.org/)
+- [Airtable](https://airtable.com/)
+- [Notion](https://www.notion.com/)
+- [Firebase](https://firebase.google.com/)
   
 ## Agent harnesses
 - [Hermes Agent](https://hermes-agent.nousresearch.com/)
@@ -48,7 +55,14 @@
 - [Thunderbolt](https://www.thunderbolt.io/)
 
 ## Interfaces
+
+### Graphical environments
 - [Television](https://television.run)
+
+### Chat-based apps
+- [Open WebUI](https://github.com/open-webui/open-webui)
+- [Goose](https://block.github.io/goose/)
+- [Thunderbolt](https://www.thunderbolt.io/)
 - [Hermes Desktop](https://hermes-agent.nousresearch.com/desktop)
 
 ## Builds
@@ -57,7 +71,7 @@ These are example configurations for AI PCs.
 ### The Beast
 - In a nutshell: dedicated GPU hardware and large amounts of RAM (either VRAM or unified RAM), enabling you to run large, frontier-class models locally.
 - Hardware:
-  - Nvidia DGX Spark, Nvidia RTX 3000/4000/5000 series cards (likely multiple), or AMD Strix Halo.
+  - Nvidia DGX Spark, Nvidia RTX 3000/4000/5000 series cards (likely multiple), AMD Strix Halo, or a Mac Studio.
   - Ideally paired with a dedicated separate machine to run the agent (so that it doesn't eat into available RAM for inference).
   - A large amount of storage (2-4 TB+) to store large model weights.
 
@@ -65,6 +79,7 @@ These are example configurations for AI PCs.
 - In a nutshell: use the MacBook or Mac Mini you already have to run smaller but capable models locally, preserving your privacy and control.
 - Hardware:
   - Apple Silicon (M1+) MacBook Air, MacBook Pro, Mac Mini, or iMac with at least 24GB of unified RAM.
+  - On Windows: an Nvidia RTX Spark laptop or mini PC.
 - Notes:
   - If you use a laptop, your agent will shut down when you close the lid.
   - Be extremely cautious when running an agent harness on your primary machine. Recommend running in a container and ensuring that any "yolo mode" is turned off.
