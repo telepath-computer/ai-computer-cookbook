@@ -60,6 +60,7 @@
 - [Goose](https://block.github.io/goose/)
 - [Thunderbolt](https://www.thunderbolt.io/)
 - [Hermes Desktop](https://hermes-agent.nousresearch.com/desktop)
+- [Tiles](https://tiles.run)
 
 ## Builds
 These are example configurations for AI PCs.
