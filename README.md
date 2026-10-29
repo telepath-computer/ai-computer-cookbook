@@ -41,10 +41,6 @@
 - [OpenViking](https://github.com/volcengine/OpenViking)
 - [Solstone](https://solstone.app/)
 - [Hindsight](https://github.com/vectorize-io/hindsight)
-- [SQLite](https://sqlite.org/)
-- [Airtable](https://airtable.com/)
-- [Notion](https://www.notion.com/)
-- [Firebase](https://firebase.google.com/)
   
 ## Agent harnesses
 - [Hermes Agent](https://hermes-agent.nousresearch.com/)
