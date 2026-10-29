@@ -57,32 +57,32 @@ These are example configurations for AI PCs.
 ### The Beast
 - In a nutshell: dedicated GPU hardware and large amounts of RAM (either VRAM or unified RAM), enabling you to run large, frontier-class models locally.
 - Hardware:
--   Nvidia DGX Spark, Nvidia RTX 3000/4000/5000 series cards (likely multiple), or AMD Strix Halo.
--   Ideally paired with a dedicated separate machine to run the agent (so that it doesn't eat into available RAM for inference).
--   A large amount of storage (2-4 TB+) to store large model weights.
+  - Nvidia DGX Spark, Nvidia RTX 3000/4000/5000 series cards (likely multiple), or AMD Strix Halo.
+  - Ideally paired with a dedicated separate machine to run the agent (so that it doesn't eat into available RAM for inference).
+  - A large amount of storage (2-4 TB+) to store large model weights.
 
 ### The Mac
 - In a nutshell: use the MacBook or Mac Mini you already have to run smaller but capable models locally, preserving your privacy and control.
 - Hardware:
--   Apple Silicon (M1+) MacBook Air, MacBook Pro, Mac Mini, or iMac with at least 24GB of unified RAM.
+  - Apple Silicon (M1+) MacBook Air, MacBook Pro, Mac Mini, or iMac with at least 24GB of unified RAM.
 - Notes:
--   If you use a laptop, your agent will shut down when you close the lid.
--   Be extremely cautious when running an agent harness on your primary machine. Recommend running in a container and ensuring that any "yolo mode" is turned off.
+  - If you use a laptop, your agent will shut down when you close the lid.
+  - Be extremely cautious when running an agent harness on your primary machine. Recommend running in a container and ensuring that any "yolo mode" is turned off.
 
 ### The Droplet
 - In a nutshell: run your agent and your model in the cloud, avoiding the need to manage any hardware at all.
 - Services:
--   Cloud VPS: Use DigitalOcean, Hetzner, or other VPS server to run your agent harness; many offer a one-click setup option for this.
--   Cloud inference: Use a provider like Fireworks.AI, Cerebras, Modal, or Together.AI to provide inference on the cloud model of your choice.
+  - Cloud VPS: Use DigitalOcean, Hetzner, or other VPS server to run your agent harness; many offer a one-click setup option for this.
+  - Cloud inference: Use a provider like Fireworks.AI, Cerebras, Modal, or Together.AI to provide inference on the cloud model of your choice.
 - Notes:
--   Set maximum spending caps for your cloud inference providers, or look for a provider who offers a flat monthly subscription rate; you don't want to get caught by surprise with a big bill if your agent uses a lot of tokens.
+  - Set maximum spending caps for your cloud inference providers, or look for a provider who offers a flat monthly subscription rate; you don't want to get caught by surprise with a big bill if your agent uses a lot of tokens.
 
 ### The Raspberry Pi
 - In a nutshell: yes, you can use one of the world's cheapest computers as an AI personal computer, with a few compromises.
 - Hardware:
--   Raspberry Pi 4 or higher.
+  - Raspberry Pi 4 or higher.
 - Services:
--   A cloud inference provider, as above.
+  - A cloud inference provider, as above.
 - Notes:
--   Very small (<1B parameters) models exist that will run on Raspis, but they are very slow and have limited capabilities.
--   The Raspi has a GPU but getting it to work can be difficult; expect that any inference you run locally will be CPU-based.
+  - Very small (<1B parameters) models exist that will run on Raspis, but they are very slow and have limited capabilities.
+  - The Raspi has a GPU but getting it to work can be difficult; expect that any inference you run locally will be CPU-based.
